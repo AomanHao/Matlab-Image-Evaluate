@@ -6,8 +6,8 @@ clear
 close all
 clc
 %% 
-% img=imread('test.jpg');
-img=imread('3096.jpg');
+img=imread('Test1.jpg');
+% img=imread('Test2.jpg');
 figure;imshow(img),title('原始图像');
 
 %% 评价图像的通透度
