@@ -1,7 +1,10 @@
+%% lightness-order-error-block (LOE_b) measure
+%rewrite by AomanHao
+%https://www.aomanhao.top/
+% Blocking processing reduces computational complexity
 function value = LOE_b(epic, ipic)
 % ipic: input low light image
 % epic: enhanced image
-
 
 ipic=double(ipic);
 epic=double(epic);
@@ -45,16 +48,6 @@ for i=1:num
         RD(i,j) = sum(flag(:));
     end
 end
-% 
-% 
-% for i=1:win
-%     for j=1:win
-%         flag1=ipic_ds>=ipic_ds(i,j);
-%         flag2=epic_ds>=epic_ds(i,j);
-%         flag=(flag1~=flag2);
-%         Value_loe(i,j)=sum(flag(:));
-%     end
-% end
 
 value = sum(RD(:));
 end

@@ -1,3 +1,6 @@
+%% lightness-order-error (LOE) measure
+%rewrite by AomanHao
+%https://www.aomanhao.top/
 function value_loe = LOE(epic, ipic)
 % ipic: input low light image
 % epic: enhanced image
@@ -18,10 +21,8 @@ if k>1
     emax=round(max(max(epic(:,:,1),epic(:,:,2)),epic(:,:,3)));
     emax=getlocalmax(emax,win);
 else
-%     imax=round(max(max(ipic)));
     imax=getlocalmax(ipic,win);
     %get the local maximum for each pixel of the enhanced image
-%     emax=round(max(max(epic)));
     emax=getlocalmax(epic,win);
 end
 
