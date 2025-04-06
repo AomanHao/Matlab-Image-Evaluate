@@ -1,4 +1,4 @@
-function EvalutaValue = Evaluta(image)
+function EvalutaValue = Eva_Permeability(image)
 
 [row, col] = size(image(:,:,1));
 MinPixel = zeros(3, 1);
